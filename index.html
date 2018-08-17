@@ -2,25 +2,55 @@
 <html>
     <head>
         <title>index</title>
+        <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Marck+Script" rel="stylesheet">
         <style>
             body{
                 margin: 0;
-                display: table;
-                width: 100%;
+                
             }
             .container{
                 height: 100vh;
-                width: 100%;
+                display: flex;
                 background-image: url("download.jpg");
                 background-size: cover;
-                display: table-row;
+            
+                padding: 5cm;
             }
-                 .left,.right{
-                     display: table-cell;
-                    width: 50%;
+            .menu{
+                float: right;
+                padding-bottom: 2em;
+            }
+            .purple{
+                color: purple;
+            }
+            .menu a:hover{
+                border: 1px solid transparent;
+                border-bottom-color: antiquewhite;
+            }
+            .menu a{
+                color: antiquewhite;
+                text-transform: uppercase;
+                text-decoration: none;
+                padding: 1em;
+               
+            }
+            .left, .right{
+                width: 50%;
+                font-family: 'Alegreya Sans', sans-serif;
+            }
+            .left p{
+                font-size: 2.5em;
+            }
+            .left p a{
+                color: white;
+            }
+            .logo{
+                font-family: 'Marck Script', cursive;
+                font-size: 2em;
             }
             .image img {
-                width: 500px
+                width: 500px;
+                float: right;
             }
             
         </style>
@@ -30,13 +60,14 @@
             <div class="left">
                 <div class="logo">Rodeeyah</div>
                 <p>Hi,my name is Rodeeyah.</p>
-                <p>I am a web developer and a student</p>
-                <p>I like reading novels</p><a href="www.twitter.com">@twitter</a>
+                <p><span class="purple">I'm</span> a web developer and a student.</p>
+                <p>I like reading novels and listening to <span class="purple">music.</span><a href="https//www.twitter.com" target=_blank>@twitter</a></p>
             </div>
             <div class="right">
                 <div class="menu">
                         <a href="about">About</a>
-                        <a href="skills">Portfolio</a>
+                        <a href="skills">skills</a>
+                        <a href="portfolio">portfolio</a>
                         <a href="contact">Get in Touch</a>
                              
 
